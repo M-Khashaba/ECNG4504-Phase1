@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "maze")(type "KiCad")(uri "${KIPRJMOD}/maze.kicad_sym")(options "")(descr "Maze robot parts"))
+)

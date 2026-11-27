@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "filename": "maze_robot.kicad_pro",
+    "version": 1
+  },
+  "schematic": {
+    "legacy_lib_dir": "",
+    "legacy_lib_list": []
+  },
+  "sheets": [
+    [
+      "31afc808-0279-4f9b-bac6-818d4f46277d",
+      "Root"
+    ]
+  ],
+  "text_variables": {}
+}
