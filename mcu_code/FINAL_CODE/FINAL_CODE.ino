@@ -259,7 +259,7 @@ String pathTurns(const int* p, int n, int h0) {
 void mapPrint() {
   logMsg("===== MAP: " + String(mnCount) + " nodes (? = road seen but not taken) =====");
   for (int i = 0; i < mnCount; i++) logMsg(nodeText(i));
-  prefs.begin("zvey", false);
+  prefs.begin("Team5", false);
   prefs.putBytes("map", mn, sizeof(MNode) * mnCount);
   prefs.putInt("mapN", mnCount);
   prefs.putInt("goalN", goalN);
@@ -303,7 +303,7 @@ void setup() {
   say("E = End / Stop");
   say("B = Approve Return Trip");
 
-  prefs.begin("zvey", true);
+  prefs.begin("Team5", true);
   String raw = prefs.getString("raw", "");
   String shrt = prefs.getString("short", "");
   prefs.end();
@@ -763,7 +763,7 @@ void saveRouteToEEPROM() {
   String raw = "", shrt = "";
   for (int i = 0; i < routeLength; i++) raw += route[i];
   for (int i = 0; i < shortRouteLength; i++) shrt += shortRoute[i];
-  prefs.begin("zvey", false);
+  prefs.begin("Team5", false);
   prefs.putString("raw", raw);
   prefs.putString("short", shrt);
   prefs.end();

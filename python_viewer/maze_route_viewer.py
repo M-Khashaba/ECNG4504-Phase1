@@ -1,5 +1,5 @@
 """
-maze_route_viewer.py - LIVE view of the zvey code maze robot (ESP32) over Bluetooth
+maze_route_viewer.py - LIVE view of the Team5 maze robot (ESP32) over Bluetooth
 
 SETUP (once): pair the car in Windows Bluetooth settings ("MazeRobot").
 RUN:          double-click run_viewer.bat   (or: python maze_route_viewer.py [COM7])
@@ -314,7 +314,7 @@ def main():
         link = Link(route, a.port, a.baud, open(logname, "w"))
 
     fig = plt.figure(figsize=(11, 8.5))
-    fig.canvas.manager.set_window_title("zvey code - live maze map")
+    fig.canvas.manager.set_window_title("Team5 - live maze map")
     ax = fig.add_axes([0.03, 0.27, 0.94, 0.68])
     lax = fig.add_axes([0.03, 0.01, 0.94, 0.24]); lax.axis("off")
     ax.set_aspect("equal", adjustable="datalim")
